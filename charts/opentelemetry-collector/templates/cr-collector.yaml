@@ -50,4 +50,9 @@ spec:
   {{- toYaml .Values.extraVolumes | nindent 2 }}
   {{- end }}
 
+  {{- if .Values.targetAllocator }}
+  targetAllocator:
+  {{- toYaml .Values.targetAllocator | nindent 4 }}
+  {{- end }}  
+
 {{- end }}

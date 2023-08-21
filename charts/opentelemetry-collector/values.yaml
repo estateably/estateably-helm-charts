@@ -8,6 +8,11 @@ fullnameOverride: ""
 # Define an OpenTelemetryCollector custom resource
 defineCustomResource: false
 
+# targetAllocator:
+#   enabled: true
+#   prometheusCR:
+#     enabled: true
+
 # Valid values are "daemonset", "deployment", "statefulset", and "sidecar".
 mode: ""
 

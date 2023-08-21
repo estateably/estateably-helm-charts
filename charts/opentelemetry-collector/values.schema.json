@@ -35,6 +35,21 @@
       "type": "boolean",
       "description": "Define an OpenTelemetryCollector custom resource."
     },
+    "targetAllocator": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "description": "Specifies whether enable targetAllocator"
+        },
+        "prometheusCR": {
+          "type": "object",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
     "mode": {
       "type": "string",
       "enum": ["daemonset", "deployment", "statefulset", "sidecar", ""]
